@@ -1,0 +1,31 @@
+body{
+    margin: 0 auto;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: rgb(130, 196, 254);
+    align-items: center;
+    justify-content: space-around;
+}
+.main-cards{
+    width: 1200px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgb(97, 181, 255);
+    border-radius: 50px;
+    -webkit-box-shadow: -10px 11px 14px -2px rgba(58, 101, 157, 0.58);
+    -moz-box-shadow: -10px 11px 14px -2px rgba(58, 101, 157, 0.58);
+    box-shadow: -10px 11px 14px -2px rgba(58, 101, 157, 0.58);
+    padding: 50px;
+    box-sizing: border-box;
+    gap: 50px;
+}
+.card{
+    background: url(../img/water-lily.jpg) center/cover;
+    border-radius: 30px;
+}
+.second{background: url(../img/sample-1.jpg) center/cover;}
+.third{background: url(../img/111.webp) center/cover;}
