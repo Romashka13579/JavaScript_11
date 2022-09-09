@@ -1,7 +1,8 @@
-body{
+body {
     margin: 0 auto;
 }
-.main{
+
+.main {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -9,11 +10,12 @@ body{
     align-items: center;
     justify-content: space-around;
 }
-.main-cards{
+
+.main-cards {
     width: 1200px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
     background: rgb(97, 181, 255);
     border-radius: 50px;
     -webkit-box-shadow: -10px 11px 14px -2px rgba(58, 101, 157, 0.58);
@@ -21,11 +23,51 @@ body{
     box-shadow: -10px 11px 14px -2px rgba(58, 101, 157, 0.58);
     padding: 50px;
     box-sizing: border-box;
+}
+
+.cards {
+    float: left;
+    width: 1100px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
-.card{
+
+.card {
     background: url(../img/water-lily.jpg) center/cover;
     border-radius: 30px;
+
 }
-.second{background: url(../img/sample-1.jpg) center/cover;}
-.third{background: url(../img/111.webp) center/cover;}
+
+.second {
+    background: url(../img/sample-1.jpg) center/cover;
+}
+
+.third {
+    background: url(../img/111.webp) center/cover;
+}
+
+input {
+    display: none;
+}
+
+.switchlabel {
+    float: left;
+    width: 70px;
+    height: 30px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 3px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    transition: all 0.5s;
+}
