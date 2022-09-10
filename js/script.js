@@ -29,10 +29,10 @@ cards.forEach(card => {
 function Transform(card, x, y, bool){
     if(bool == true){
         card.style.transform = "matrix(1.00,"+(- 0.28/400/333 * (200 - x) * (166.5 - y))+","+(- 0.28/400/333 * (200 - x) * (166.5 - y))+",1.00,0,0)"
-        card.style.boxShadow = ""+(0.03 * (200-x))+"px "+(0.036036036 * (166.5-y))+"px 6px 8px rgba(0, 0, 0, 0.35)"
+        card.style.boxShadow = ""+(0.03 * (200-x))+"px "+(0.036036036 * (166.5-y))+"px 6px 9px rgba(0, 0, 0, 0.35)"
     }
     else if(bool == false){
         card.style.transform = "matrix(1.00,"+(0.28/400/333 * (200 - x) * (166.5 - y))+","+(0.28/400/333 * (200 - x) * (166.5 - y))+",1.00,0,0)"
-        card.style.boxShadow = ""+(-0.03 * (200-x))+"px "+(-0.036036036 * (166.5-y))+"px 6px 8px rgba(0, 0, 0, 0.35)"
+        card.style.boxShadow = ""+(-0.03 * (200-x))+"px "+(-0.036036036 * (166.5-y))+"px 6px 9px rgba(0, 0, 0, 0.35)"
     }
 }
