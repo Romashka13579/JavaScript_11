@@ -37,7 +37,7 @@ body {
 .cards {
     float: left;
     width: calc(85.8vw - 100px);
-    height: 400px;
+    height: calc(76.4vh - 100px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
